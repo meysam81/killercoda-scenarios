@@ -1,0 +1,30 @@
+{
+  "title": "Chapter 3.2. Docker layers",
+  "description": "Build a Docker image using docker layers as cache",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Build a Docker image Without Using Layers",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Build a Docker image With Using Layers",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{ "file": "*", "target": "~/" }]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
