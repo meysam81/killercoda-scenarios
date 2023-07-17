@@ -14,7 +14,7 @@ Build the docker image
 time docker build -t currency-store:no-layer .
 ```{{exec}}
 
-Observe the time taken to build the image. (~28s)
+**NOTE**: Observe the time taken to build the image.
 
 
 ## Make a change to the code (not the dependencies)
@@ -29,7 +29,21 @@ echo '# This is a comment' >> main.py
 time docker build -t currency-store:no-layer .
 ```{{exec}}
 
-Observe the time taken to build the image. (~28s)
+**NOTE**: Observe the time taken to build the image.
+
+## Let's change the dependency to see the difference
+
+```bash
+echo 'requests==2' >> requirements.txt
+```{{exec}}
+
+```bash
+time docker build -t currency-store:no-layer .
+```{{exec}}
+
+**NOTE**: Observe the time taken to build the image.
+
+## Conclusion
 
 Since we didn't take advantage of the docker layers in our build, the time is
 quite about the same even though our dependencies haven't changed and we
