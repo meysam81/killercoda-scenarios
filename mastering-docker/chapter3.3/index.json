@@ -1,0 +1,32 @@
+{
+  "title": "Chapter 3.3. Docker build hooks",
+  "description": "Build a Docker image with hooks",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "text": "step0.md",
+        "verify": "verify0.sh"
+      },
+      {
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{ "file": "**/*", "target": "~/" }]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
