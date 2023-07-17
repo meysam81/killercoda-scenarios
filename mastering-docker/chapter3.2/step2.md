@@ -5,7 +5,7 @@
 Change directory
 
 ```bash
-cd ~/with-docker-layer
+cd ~/with-docker-layers
 ```{{exec}}
 
 Build the docker image
