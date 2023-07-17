@@ -1,4 +1,4 @@
-# Chapter 1 - Introduction to Docker
+# Introduction to Docker
 
 ## Check docker version
 

@@ -1,4 +1,4 @@
-# Chapter 2 - Create a simple web server
+# Create a simple web server
 
 ## Build docker image
 

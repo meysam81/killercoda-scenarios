@@ -1,4 +1,4 @@
-# Chapter 2 - Run Nginx web server in Docker
+# Run Nginx web server in Docker
 
 ## Pull the image
 
