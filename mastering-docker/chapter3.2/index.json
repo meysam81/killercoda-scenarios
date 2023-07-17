@@ -7,6 +7,10 @@
     },
     "steps": [
       {
+        "text": "step0.md",
+        "verify": "verify0.sh"
+      },
+      {
         "title": "Build a Docker image Without Using Layers",
         "text": "step1.md",
         "verify": "verify1.sh"
