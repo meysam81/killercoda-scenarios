@@ -1,0 +1,21 @@
+{
+  "title": "Chapter 3.1. Inspect Docker Layers",
+  "description": "Pull Nginx Docker image and observe its layers",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Pull and see Nginx layers",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
