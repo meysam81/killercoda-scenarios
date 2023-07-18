@@ -17,6 +17,14 @@
       {
         "text": "step2.md",
         "verify": "verify2.sh"
+      },
+      {
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "text": "step4.md",
+        "verify": "verify4.sh"
       }
     ],
     "finish": {
