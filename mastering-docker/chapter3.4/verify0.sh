@@ -1,3 +1,3 @@
 #!/bin/bash -eu
 
-trivy --version
+docker image inspect nginx:1.25-alpine

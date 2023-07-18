@@ -1,6 +1,6 @@
 {
-  "title": "Chapter 3.4. Scan docker images",
-  "description": "Scan docker images for security vulnerabilities",
+  "title": "Chapter 3.4. Docker build hooks",
+  "description": "Build a Docker image with hooks",
   "details": {
     "intro": {
       "text": "intro.md"
@@ -13,10 +13,17 @@
       {
         "text": "step1.md",
         "verify": "verify1.sh"
+      },
+      {
+        "text": "step2.md",
+        "verify": "verify2.sh"
       }
     ],
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{ "file": "**/*", "target": "~/" }]
     }
   },
   "backend": {

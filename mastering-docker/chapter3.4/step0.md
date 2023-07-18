@@ -1,5 +1,7 @@
-# Install trivy to use for this scenario
+# Pull the base image to use for this scenario
+
+## Pull the base image
 
 ```bash
-curl -sfL 'https://github.com/aquasecurity/trivy/releases/download/v0.43.1/trivy_0.43.1_Linux-64bit.tar.gz' | tar -xzf - -C /usr/local/bin/ trivy
+docker pull nginx:1.25-alpine
 ```{{exec}}
