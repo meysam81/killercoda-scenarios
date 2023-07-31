@@ -14,3 +14,7 @@ docker network create --driver bridge demo2
 ```bash
 docker run --rm --network demo2 tutum/dnsutils dig nginx-hostname nginx-container nginx-alias +search +short
 ```{{exec}}
+
+The response is empty, meaning that the DNS server doesn't know about the
+`nginx-container` name. This is because the DNS server is only aware of the
+containers in the same network.
