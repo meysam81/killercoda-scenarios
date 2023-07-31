@@ -7,21 +7,26 @@ docker network create --driver bridge demo
 ```{{exec}}
 
 
-## Run the first nginx
+## Run the nginx
 
 ```bash
-docker run -d --name nginx-bridge --hostname nginx --network demo nginx
+docker run -d --name nginx-container --hostname nginx-hostname --network-alias nginx-alias --network demo nginx
 ```{{exec}}
 
-The Nginx is now only accessible withing the `demo` network. We can test it by
-running a container in the same network and trying to access it.
+
+## Use curl to resolve all the names
 
 ```bash
-docker run --rm --network demo curlimages/curl nginx
+docker run --rm --network demo curlimages/curl nginx-container
 ```{{exec}}
-
-It is also accessible by container name:
 
 ```bash
-docker run --rm --network demo curlimages/curl nginx-bridge
+docker run --rm --network demo curlimages/curl nginx-hostname
 ```{{exec}}
+
+```bash
+docker run --rm --network demo curlimages/curl nginx-alias
+```{{exec}}
+
+As you can see, all the names resolve correctly using the built-in DNS server
+provided by Docker.

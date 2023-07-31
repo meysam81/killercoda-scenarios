@@ -1,5 +1,5 @@
 {
-  "title": "Chapter 4.2. Docker Networking Modes",
+  "title": "Chapter 4.3. Docker Bridge Networking Options",
   "details": {
     "intro": {
       "text": "intro.md"
