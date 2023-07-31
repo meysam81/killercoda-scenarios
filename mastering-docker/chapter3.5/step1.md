@@ -23,6 +23,7 @@ docker run --name nginx -it nginx:1.25.1-alpine sh
 ```bash
 wget 'http://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libx11-1.8.4-r4.apk'
 apk add ./libx11-1.8.4-r4.apk
+apk add --upgrade nghttp2-libs
 exit
 ```{{exec}}
 
@@ -38,4 +39,4 @@ docker commit nginx nginx:1.25.1-alpine-fixed
 trivy image nginx:1.25.1-alpine-fixed -s HIGH,CRITICAL
 ```{{exec}}
 
-As you can see the image has no vulnerabilities for libx11 anymore.
+As you can see the image has no vulnerabilities anymore.
