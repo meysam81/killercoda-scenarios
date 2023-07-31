@@ -5,7 +5,6 @@
 ```bash
 docker run -d --name nginx1 nginx
 ```{{exec}}
-```
 
 ## Run the second nginx
 
