@@ -9,7 +9,7 @@ docker run -d --name nginx-host --network host nginx
 ## Test your connection
 
 ```bash
-docker run --rm --network host curlimages/curl localhost
+docker run --rm curlimages/curl --network host localhost
 ```{{exec}}
 
 Both the containers above are running in host networking mode, which allows them
@@ -25,5 +25,5 @@ python3 -m http.server -d /tmp 1234 >/dev/null 2>&1 &
 Now, access the localhost from a container:
 
 ```bash
-docker run --rm --network host curlimages/curl localhost:1234
+docker run --rm curlimages/curl --network host localhost:1234
 ```{{exec}}
