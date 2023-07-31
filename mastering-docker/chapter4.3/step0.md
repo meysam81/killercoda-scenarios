@@ -14,18 +14,10 @@ docker run -d --name nginx-container --hostname nginx-hostname --network-alias n
 ```{{exec}}
 
 
-## Use curl to resolve all the names
+## Resolve the nginx from the same network
 
 ```bash
-docker run --rm --network demo curlimages/curl nginx-container
-```{{exec}}
-
-```bash
-docker run --rm --network demo curlimages/curl nginx-hostname
-```{{exec}}
-
-```bash
-docker run --rm --network demo curlimages/curl nginx-alias
+docker run --rm --network demo tutum/dnsutils dig nginx-hostname nginx-container nginx-alias +search +short
 ```{{exec}}
 
 As you can see, all the names resolve correctly using the built-in DNS server
