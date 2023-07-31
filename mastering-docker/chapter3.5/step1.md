@@ -38,4 +38,4 @@ docker commit nginx nginx:1.25.1-alpine-fixed
 trivy image nginx:1.25.1-alpine-fixed -s HIGH,CRITICAL
 ```{{exec}}
 
-As you can see the image has no vulnerabilities anymore.
+As you can see the image has no vulnerabilities for libx11 anymore.
