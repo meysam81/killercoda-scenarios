@@ -1,4 +1,4 @@
-FROM nginx:1.25-alpine
+FROM nginx:1.31-alpine
 
 # These ARGs have default but can be overridden with --build-arg flag
 ARG BUILD_YEAR=2023
